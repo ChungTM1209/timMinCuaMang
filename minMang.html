@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <p> Tim Min cua Mang</p>
+</head>
+<body>
+<p id="minMang"> </p>
+<script>
+    var arr = [2,5,6,1,8];
+    function minArray(test) {
+        if (test.length == 0)
+            return -1;
+            var min = test[0];
+        for (var i = 0; i < test.length;i++){
+            if (test[i] < min){
+                min = test[i];
+            }
+        }
+        return min;
+    }
+    document.getElementById('minMang').innerHTML ="Gia tri nho nhat cua " + arr + " : " + minArray(arr);
+</script>
+</body>
+</html>
